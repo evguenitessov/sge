@@ -1,0 +1,45 @@
+{
+    "zonas": [
+        {
+            "descripcion": "Obelisco",
+            "posicion": {
+                "latitud": -34.6043411,
+                "longitud": -58.384696
+            },
+            "radioDeCobertura": 1.0,
+            "transformadores": [
+                {
+                    "posicion": {
+                        "latitud": -34.6043411,
+                        "longitud": -58.384696
+                    },
+                    "clientes": []
+                },
+                {
+                    "posicion": {
+                        "latitud": -34.6078724,
+                        "longitud": -58.3798583
+                    },
+                    "clientes": []
+                }
+            ]
+        },
+        {
+            "descripcion": "Parque Chacabuco",
+            "posicion": {
+                "latitud": -34.6364917,
+                "longitud": -58.4461508
+            },
+            "radioDeCobertura": 1.5,
+            "transformadores": [
+                {
+                    "posicion": {
+                        "latitud": -34.6364918,
+                        "longitud": -58.4461498
+                    },
+                    "clientes": []
+                }
+            ]
+        }
+    ]
+}

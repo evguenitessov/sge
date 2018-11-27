@@ -1,0 +1,60 @@
+{{#partial "contenido"}}
+
+
+    {{#if admin}}
+		{{> adminNavbar.hbs }}
+	{{else}}
+		{{#if cliente}}
+			{{> clienteNavbar.hbs }}
+		{{/if}}
+	{{/if}}
+
+    <h1 class="text-center font-weight-bold mb-4">CONSUMO POR PERIODO</h1>       
+
+    <div class="container">
+
+      <div class="row h-100 mb-5">
+        <div class="align-self-center mx-auto">
+          <form action="/consumoPorPeriodo" method="GET" enctype="application/json">
+            <div class="form-group">
+
+            <div class="card text-white bg-dark text-center mx-auto">                      
+              <div class="card-body">
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Cliente</span>
+                  </div>
+                  <input type="text" class="form-control text-center" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" value="{{cliente.nombre}} {{cliente.apellido}}" readonly>
+                </div>              
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Fecha desde</span>
+                  </div>
+                  <input type="date" name="fechaDesde" class="mr-5" value="{{fechaDesde}}" required>
+                </div> 
+                  <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Fecha hasta</span>
+                  </div>
+                  <input type="date" name="fechaHasta" class="mr-5" value="{{fechaHasta}}" required>
+                </div>              
+                <button type="submit" class="btn btn-success btn-lg mb-3">Buscar</button>
+                <a class="btn btn-primary btn-lg mb-3" href="/consumoPorPeriodo">Limpiar</a>
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Consumo</span>
+                  </div>
+                  <input type="text" class="form-control text-center" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"
+                  value="{{numberFormat consumo "0.0000"}} kWh" readonly>
+                </div>               
+              </div>
+              </div>          
+            </div>        
+          </form>
+        </div>
+      </div>
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}

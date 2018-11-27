@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4 p-3">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-fill w-100 align-items-start">
+          <li class="nav-item {{#if consumosHogares}} active {{/if}}" >           	  
+        	<a class="nav-link" href="/consumosHogares">CONSUMO POR HOGAR<span class="sr-only">(current)</span></a>                         
+           <li class="nav-item {{#if dispositivos}} active {{/if}}" > 
+            <a class="nav-link" href="/dispositivos">CREAR DISPOSITIVO</a>
+          </li>          
+           <li class="nav-item {{#if reportes}} active {{/if}}" >
+            <a class="nav-link" href="/reportes">REPORTES</a>
+          </li>                
+        </ul>
+      </div>
+    </nav>

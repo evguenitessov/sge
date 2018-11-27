@@ -1,0 +1,45 @@
+{{#partial "contenido"}}
+
+
+ 	{{#if admin}}
+		{{> adminNavbar.hbs }}
+	{{else}}
+		{{#if cliente}}
+			{{> clienteNavbar.hbs }}
+		{{/if}}
+	{{/if}}
+
+    <h1 class="text-center font-weight-bold mb-5">CONSUMO POR TRANSFORMADOR POR PERIODO</h1>       
+
+    <div class="container">
+
+      <form action="/reportes" method="POST" enctype="application/json" class="mb-3 text-center">
+        Fecha desde:
+        <input type="date" name="fechaD" class="mr-5">
+        Fecha hasta:
+        <input type="date" name="fechaH" class="mr-5">
+        <input type="submit" class="btn btn-success btn-lg" value="Filtrar">
+      </form>
+
+      <table class="table table-striped table-bordered text-center">
+        <thead class="thead-dark">
+          <tr>            
+            <th scope="col">TRANSFORMADOR</th>
+            <th scope="col">CONSUMO</th>          
+          </tr>
+        </thead>
+        <tbody>
+          {{#each consumosClientes}}
+          <tr>                                    
+            <td>{{@key}}</td>
+            <td>{{ numberFormat this "0.00"}}</td>
+          </tr>  
+          {{/each}}           
+        </tbody>
+      </table>
+
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}

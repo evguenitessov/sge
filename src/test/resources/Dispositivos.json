@@ -1,0 +1,154 @@
+{
+	"dispositivos": [
+		{
+			"nombre": "Pava electrica",
+			"kWHora": 5,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Microondas"
+		},
+		{
+			"nombre": "Aire Acondicionado 3500 Frigorias",
+			"kWHora": 1.613,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "AireAcondicionado"
+		},
+		{
+			"nombre": "Aire Acondicionado 2200 Frigorias",
+			"kWHora": 1.013,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "AireAcondicionado"
+		},
+		{
+			"nombre": "Televisor Tubo 21\"",
+			"kWHora": 0.075,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Televisor"
+		},
+		{
+			"nombre": "Televisor Tubo 29\" a 34\"",
+			"kWHora": 0.175,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Televisor"
+		},
+		{
+			"nombre": "LCD 40\"",
+			"kWHora": 0.18,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Televisor"
+		},
+		{
+			"nombre": "LED 24\"",
+			"kWHora": 0.04,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Televisor"
+		},
+		{
+			"nombre": "LED 32\"",
+			"kWHora": 0.055,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Televisor"
+		},
+		{
+			"nombre": "LED 40\"",
+			"kWHora": 0.08,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Televisor"
+		},
+		{
+			"nombre": "Heladera con Freezer",
+			"kWHora": 0.09,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Heladera"
+		},
+		{
+			"nombre": "Heladera sin Freezer",
+			"kWHora": 0.075,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Heladera"
+		},
+		{
+			"nombre": "Lavarropas automático 5kg calentamiento de agua",
+			"kWHora": 0.875,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Lavarropas"
+		},
+		{
+			"nombre": "Lavarropas automático 5kg",
+			"kWHora": 0.175,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Lavarropas"
+		},
+		{
+			"nombre": "Lavarropas semi-automático 5kg",
+			"kWHora": 0.1275,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Lavarropas"
+		},
+		{
+			"nombre": "Ventilador de pie",
+			"kWHora": 0.09,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Ventilador"
+		},
+		{
+			"nombre": "Ventilador de techo",
+			"kWHora": 0.06,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Ventilador"
+		},
+		{
+			"nombre": "Lámpara halógena 40w",
+			"kWHora": 0.04,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Lampara"
+		},
+		{
+			"nombre": "Lámpara halógena 60w",
+			"kWHora": 0.06,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Lampara"
+		},
+		{
+			"nombre": "Lámpara halógena 100w",
+			"kWHora": 0.015,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Lampara"
+		},
+		{
+			"nombre": "Lámpara halógena 11w",
+			"kWHora": 0.011,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Lampara"
+		},
+		{
+			"nombre": "Lámpara halógena 15w",
+			"kWHora": 0.015,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Lampara"
+		},
+		{
+			"nombre": "Lámpara halógena 20w",
+			"kWHora": 0.02,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Lampara"
+		},
+		{
+			"nombre": "PC Escritorio",
+			"kWHora": 0.4,
+			"modulo":"Inteligente",
+			"tipoDispositivo": "Computadora"
+		},
+		{
+			"nombre": "Microondas convencional",
+			"kWHora": 0.64,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Microondas"
+		},
+		{
+			"nombre": "Plancha a Vapor",
+			"kWHora": 0.75,
+			"modulo":"Estandar",
+			"tipoDispositivo": "Plancha"
+		}
+	]
+}

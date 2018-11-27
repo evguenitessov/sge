@@ -1,0 +1,34 @@
+{{#partial "contenido"}}
+
+<div class="row h-100">
+        <div class="align-self-center mx-auto">
+            
+            <div class="card text-white bg-dark text-center mx-auto">        
+            <h1 class="card-header">BIENVENIDO A SGE</h1>
+             <div class="card-body">
+
+             <form action="/login" method="POST" enctype="application/json">              
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Usuario:</span>
+                  </div>
+                  <input type="text" name="username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">                                 
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Contraseña:</span>
+                  </div>
+                  <input type="password" name="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">                
+                </div>
+                <button type="submit" class="btn btn-success btn-lg">Ingresar</button>
+                
+              </form>
+
+             </div>
+            </div>
+        </div>
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}

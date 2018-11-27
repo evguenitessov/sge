@@ -1,0 +1,107 @@
+{
+	"clientes": [
+		{
+			"nombre": "Juan",
+		 	"apellido": "Quinteros",
+		 	"tipoDocumento": "DNI",		 
+		 	"numeroDocumento": "36159783",
+		 	"telefono": "41111111",
+		 	"domicilio": "Calle Falsa 123",
+			"fechaAlta": "1991-10-14",			
+			"categoria": "R1",
+			"dispositivos": [
+				{
+					"nombre": "Aire Acondicionado 3500 Frigorias",
+					"kWHora": 1.613,
+					"modulo":"Inteligente",
+					"tipoDispositivo": "AireAcondicionado",
+					"estado":"Encendido"
+				},
+				{
+					"nombre": "Aire Acondicionado 2200 Frigorias",
+					"kWHora": 1.013,
+					"modulo":"Inteligente",
+					"tipoDispositivo": "AireAcondicionado",
+					"estado":"Encendido"
+				}
+			],
+			"observadoresDispositivos": [],
+			"puntos": 0,
+			"posicion": {
+				"latitud": -34.6439109,
+				"longitud": -58.4389561
+			} 
+		},
+		{
+			"nombre": "Nikola",
+		 	"apellido": "Tesla",
+		 	"tipoDocumento": "Lapida",		 
+		 	"numeroDocumento": "666",
+		 	"telefono": "41111111",
+		 	"domicilio": "Calle Falsa 123",
+			"fechaAlta": "1856-07-10",			
+			"categoria": "R1",
+			"dispositivos": [
+				{
+					"nombre": "Lámpara halógena 15w",
+					"kWHora": 0.015,
+					"modulo":"Inteligente",
+					"tipoDispositivo": "Lampara",
+					"estado":"Encendido"
+				},
+				{
+					"nombre": "Lámpara halógena 20w",
+					"kWHora": 0.02,
+					"modulo":"Inteligente",
+					"tipoDispositivo": "Lampara",
+					"estado":"Encendido"
+				},
+				{
+					"nombre": "PC Escritorio",
+					"kWHora": 0.4,
+					"modulo":"Inteligente",
+					"tipoDispositivo": "Computadora",
+					"estado":"Encendido"
+				},
+				{
+					"nombre": "Microondas convencional",
+					"kWHora": 0.64,
+					"modulo":"Estandar",
+					"tipoDispositivo": "Microondas",
+					"estado":"Encendido"
+				}
+			],
+			"observadoresDispositivos": [],
+			"puntos": 0,
+			"posicion": {
+				"latitud": -34.6021323,
+				"longitud": -58.3852172
+			}
+		},
+		{
+			"nombre": "Evgueni",
+		 	"apellido": "Tessov",
+		 	"tipoDocumento": "DNI",		 
+		 	"numeroDocumento": "36159783",
+		 	"telefono": "41111111",
+		 	"domicilio": "Calle Falsa 123",
+			"fechaAlta": "1991-10-14",			
+			"categoria": "R1",
+			"dispositivos": [
+				{
+					"nombre": "Aire Acondicionado 3500 Frigorias",
+					"kWHora": 1.613,
+					"modulo":"Inteligente",
+					"tipoDispositivo": "AireAcondicionado",
+					"estado":"Encendido"
+				}
+			],
+			"observadoresDispositivos": [],
+			"puntos": 0,
+			"posicion": {
+				"latitud": -34.6439109,
+				"longitud": -58.4389561
+			} 
+		}
+	]
+}

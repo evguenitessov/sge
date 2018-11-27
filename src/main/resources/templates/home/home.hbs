@@ -1,0 +1,25 @@
+{{#partial "contenido"}}
+
+
+    {{#if admin}}
+		{{> adminNavbar.hbs }}
+	{{else}}
+		{{#if cliente}}
+			{{> clienteNavbar.hbs }}
+		{{/if}}
+	{{/if}}
+    
+    
+
+    <div class="wrapper text-center">
+
+    <h1 class="text-center font-weight-bold">SGE</h1>
+    <h2 class="text-center font-weight-bold">Sistema de Gestión Energética</h2>    
+    
+    <img src="sge.png" alt="" width="45%">
+
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}
