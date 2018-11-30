@@ -155,22 +155,44 @@
 		<build>
 			<finalName>grupo-24</finalName>
 			<plugins>
-				<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.5.3</version>
-				<configuration>
-				  <descriptor>src/assembly/dep.xml</descriptor>
-				</configuration>
-				<executions>
-				  <execution>
-					<id>create-archive</id>
-					<phase>package</phase>
-					<goals>
-					  <goal>single</goal>
-					</goals>
-				  </execution>
-				</executions>
-			  </plugin>				
+				<!-- Configuracion del plugin maven assembly -->
+			   <plugin>
+				   <groupId>org.apache.maven.plugins</groupId>
+				   <artifactId>maven-assembly-plugin</artifactId>
+				   <version>2.2.2</version>
+				   <!-- configuracion del plugin-->
+				   <configuration>
+					   <!-- Se especifica el fichero donde se describe la configuracion del binario -->
+					   <descriptors>
+						   <descriptor>src/main/assembly/assembly.xml</descriptor>
+					   </descriptors>
+				   </configuration>
+			   </plugin>
+			   <!-- La configuracion de maven-jar-plugin -->
+			   <plugin>
+				   <groupId>org.apache.maven.plugins</groupId>
+				   <artifactId>maven-jar-plugin</artifactId>
+				   <version>2.3.1</version>
+				   <!-- Configuration del plugin -->
+				   <configuration>
+					   <!-- Configuracion del archiver -->
+					   <archive>
+						   <!-- Manifest que especifica la configuracion -->
+						   <manifest>
+							   <!-- Classpath es añadido al manifefst. -->
+							   <addClasspath>true</addClasspath>
+							   <!--
+								   Configures the classpath prefix. This configuration option is
+								   used to specify that all needed libraries are found under lib/
+								   directory.
+							   -->
+							   <classpathPrefix>lib/</classpathPrefix>
+							   <!--  Se especifica la clase principal a ejecutar -->
+							   <mainClass>server.Server</mainClass>
+						   </manifest>
+					   </archive>
+				   </configuration>
+			   </plugin>				
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.1</version>

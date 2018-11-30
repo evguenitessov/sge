@@ -1,0 +1,43 @@
+<assembly>
+    <id>bin</id>
+    <!-- Genera un zip que contiene los ficheros necesarios -->
+    <formats>
+        <format>zip</format>
+    </formats>
+ 
+    <!-- Se añaden las dependencias necesarias al paquete lib -->
+    <dependencySets>
+        <dependencySet>
+            <!--
+                Project artifact is not copied under library directory since
+                it is added to the root directory of the zip package.
+            -->
+            <useProjectArtifact>false</useProjectArtifact>
+            <outputDirectory>lib</outputDirectory>
+            <unpack>false</unpack>
+        </dependencySet>
+    </dependencySets>
+ 
+    <fileSets>
+        <!--
+            Se añade script de arranque en la raiz del directorio. Los scripts
+            estan locaizados en src/main/scripts siguiendo la convencion especificada
+            por maven.
+        -->
+        <fileSet>
+            <directory>${project.build.scriptSourceDirectory}</directory>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>startup.*</include>
+            </includes>
+        </fileSet>
+        <!-- se añade parquete jar a la raiz del zip -->
+        <fileSet>
+            <directory>${project.build.directory}</directory>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
